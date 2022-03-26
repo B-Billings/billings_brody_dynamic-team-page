@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title></title>
-</head>
-<body >
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<title>Dynamic Team Page</title>
+		<link href="css/reset.css" rel="stylesheet" type="text/css" >
+		<link href="css/main.css" rel="stylesheet" type="text/css">
 
-</body>
+	</head>
+	<body>
+		<h1 class="hidden">Dynamic Team Page</h1>
+		<div>
+			<header>
+				<nav>
+					<h2 class="hidden">Main Navigation</h2>
+					<ul id="personlist">
+            <li data-offset="0" class="person">Home</li>
+						<li data-offset="1" class="person">Brody</li>
+						<li data-offset="2" class="person">Fake Twin</li>
+            <li data-offset="3" class="person">Elon Musk </li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+			<section id="about">
+				<div id="slides">
+					<div id="personpictures">
+            <img src="images/homescreenimage.jpg" alt="">
+						<img src="images/Brody.jpg" alt="">
+						<img src="images/BrodyT.jpg" alt="">
+            <img src="images/Elon.jpg" alt="">
+					</div>
+				</div>
+        <div>
+          <h2>test</h2>
+				<h2 class="hidden">Introduction</h2>
+				<p id="biotext"></p>
+      </div>
+			</section>
+
+			</main>
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
+
 </html>
