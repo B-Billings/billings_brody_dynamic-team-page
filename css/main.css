@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden
+{
+	display: none;
+}
+
+body{
+  max-width:1500px;
+  margin-left: 12em;
+  background-image: url('images/homescreenimage.jpg');
+}
+h2{
+  max-width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+
+}
+ul
+{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-evenly;
+  background-color: #32469a;
+}
+
+ul li
+{
+	cursor: pointer;
+  padding: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+  color: white;
+}
+
+#about
+{
+  outline: 2px black;
+	height: 800px;
+  max-width: 1500;
+
+}
+
+#slides
+{
+	width: 500px;
+	height: 500px;
+	margin: 100px auto 40px auto;
+	overflow: hidden;
+  float: left;
+  margin-left: 50px
+}
+
+#personpictures{
+  width:3000px;
+	position: relative;
+	transition: all 1s ease;
+  margin-right: 20px;
+}
+
+#biotext
+{
+	font-size: 20px;
+	margin-top: 200px;
+	margin-left:29em;
+  padding: 20px;
+
+}
