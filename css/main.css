@@ -10,14 +10,18 @@ body{
   max-width:1500px;
   margin-left: 12em;
   background-image: url('images/homescreenimage.jpg');
+	font-family: "Baskervville", arial, helvetica,sans-serif;
 }
 h2{
   max-width: 100%;
   text-align: center;
-  color: white;
+  color: #ac2025;
   font-size: 50px;
   padding: 20px;
 
+}
+p{
+	color: #32469a;
 }
 ul
 {
@@ -65,8 +69,10 @@ ul li
 
 #biotext
 {
-	font-size: 20px;
-	margin-top: 200px;
+	font-size: 22px;
+	letter-spacing: 1.5px;
+	line-height: 2em;
+	margin-top: 5em;
 	margin-left:29em;
   padding: 20px;
 
