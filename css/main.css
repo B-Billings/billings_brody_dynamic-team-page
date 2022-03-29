@@ -8,8 +8,8 @@
 
 body{
   max-width:1500px;
-  margin-left: 12em;
-  background-image: url('images/homescreenimage.jpg');
+  margin: auto;
+  background-image: url("images/homescreenimage.jpg");
 	font-family: "Baskervville", arial, helvetica,sans-serif;
 }
 h2{
@@ -23,11 +23,19 @@ h2{
 p{
 	color: #32469a;
 }
+
+#logo{
+	max-width: 100%;
+	max-height: 50px;
+	justify-content: space-around;
+
+}
 ul
 {
   display: flex;
   flex-direction: row;
-  max-width: 100%;
+	flex-wrap: wrap;
+  max-width: 1500px;
   justify-content: space-evenly;
   background-color: #32469a;
 }
@@ -35,38 +43,46 @@ ul
 ul li
 {
 	cursor: pointer;
-  padding: 50px;
+  padding: 40px;
   margin-left: 50px;
-  margin-right: 50px;
+  margin-right: auto;
   font-size: 30px;
-  color: white;
+  color: #fff;
+	text-decoration: none;
+}
+ul li:hover{
+  color: #ac2025;
+  transition: 1s;
 }
 
-#about
+.about
 {
   outline: 2px black;
 	height: 800px;
-  max-width: 1500;
-
+  max-width: 1500px;
+	max-height: 600px;
 }
 
-#slides
+.slides
 {
+	max-width: 100%;
 	width: 500px;
 	height: 500px;
 	margin: 100px auto 40px auto;
 	overflow: hidden;
   float: left;
-  margin-left: 50px
+  margin-left: 50px;
 }
 
-#personpictures{
+.personpictures{
   width:3000px;
 	position: relative;
 	transition: all 1s ease;
   margin-right: 20px;
 }
+.textarea{
 
+}
 #biotext
 {
 	font-size: 22px;
@@ -75,5 +91,26 @@ ul li
 	margin-top: 5em;
 	margin-left:29em;
   padding: 20px;
+	margin-right: 20px;
+
+}
+
+.mainfooter{
+	max-width: 100%;
+	height: 100px;
+	background-color: #32469a;
+	margin-top: 100px;
+}
+
+@media only screen and (max-width:1142px){
+	ul li
+	{
+		cursor: pointer;
+	  padding: 10px;
+	  margin-left: 50px;
+	  margin-right: auto;
+	  font-size: 30px;
+	  color: white;
+	}
 
 }
