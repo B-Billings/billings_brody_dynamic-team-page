@@ -2,8 +2,8 @@
 
 
 	const TheList = document.querySelector("#personlist"),
-			pictures = document.querySelector("#personpictures"),
-			person = document.querySelector("#about h2"),
+			pictures = document.querySelector(".personpictures"),
+			person = document.querySelector(".about h2"),
 			bio = document.querySelector("#biotext");
 
 	const introContent = [
@@ -16,10 +16,9 @@
 	];
 
 
-	function slideBanner(e) {
+	function slideBanner(event) {
 		if (event.target.className.includes("person")) {
-			let multiplier = event.target.dataset.offset,
-				offsetWidth = 503;
+			let multiplier = event.target.dataset.offset, offsetWidth = 503;
 
 			pictures.style.right = `${multiplier * offsetWidth}px`;
 		}
@@ -28,10 +27,9 @@
 	function personbio(name, text) {
 		person.textContent = name;
 		bio.textContent = text;
-		document.querySelector("#profileTitle").style.backgroundColor = color;
 	}
 
-	function changeText(e) {
+	function changeText(event) {
 		personbio(introContent[event.target.dataset.offset][0],
 						introContent[event.target.dataset.offset][1]);
 
